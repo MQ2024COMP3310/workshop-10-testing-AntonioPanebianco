@@ -78,7 +78,7 @@ class TestWebApp(unittest.TestCase):
         response = self.client.post('/signup', data = {
             'email' : 'user@test.com"; drop table user; -- ',
             'name' : 'test user',
-            'password' : 'test123'
+            'password' : 'test1234567890'
         }, follow_redirects = True)
         assert response.status_code == 200 
 
