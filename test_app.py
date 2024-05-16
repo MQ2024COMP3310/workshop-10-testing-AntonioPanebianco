@@ -72,7 +72,7 @@ class TestWebApp(unittest.TestCase):
 
         user = User.query.filter_by(email='user@test.com').first()
         assert user is not None
-        assert check_password_hash(user.password, 'tony')
+        assert check_password_hash(user.password, 'test123')
 
     def test_sql_injection(self):
         response = self.client.post('/signup', data = {
