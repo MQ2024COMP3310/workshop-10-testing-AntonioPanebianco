@@ -64,7 +64,7 @@ class TestWebApp(unittest.TestCase):
         response = self.client.post('/signup', data = {
             'email' : 'user@test.com',
             'name' : 'test user',
-            'password' : 'testsdfsdkjfsdfkj23'
+            'password' : 'testsdfsdkjfsdcxlkgsdjfdssdklffkj23'
         }, follow_redirects = True)
         assert response.status_code == 200
         # should redirect to the login page
